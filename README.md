@@ -1,6 +1,6 @@
 # AI-Powered English Teaching Platform
 
-This project is a scalable platform designed to help users improve their English skills, particularly in preparation for language exams. It uses AI-generated feedback to guide user learning and will support both public use and B2B integrations.
+This project is a scalable platform designed to help users improve their English skills, particularly in preparation for language exams. It uses AI-generated feedback to guide user learning and will support both public use and potential B2B integrations.
 
 ---
 
@@ -83,6 +83,33 @@ To bring the platform to public release:
 - **Readability:** Prefer readable class names (`btn`, `alert`) inside components
 - **Scalability:** Structure code to allow future theming, accessibility, and analytics
 - **Focus on UX:** Error states, loading feedback, and input validation handled at the component level
+
+---
+
+## 🤖 AI System Design
+
+### Multi-Model Architecture
+
+- Use different AI models for different tasks to balance **cost, speed, and quality**:
+
+  - **OpenAI GPT-3.5-turbo** for general feedback and grammar correction
+  - **Claude/Mixtral** or open models for basic scaffolding or faster suggestions
+  - **Higher-cost models (e.g. GPT-4)** reserved for premium features or edge cases
+
+### Feedback Oversight
+
+- Implement a **secondary AI layer** to audit or review the primary AI's feedback
+
+  - Ensure correctness, bias mitigation, tone, and appropriateness
+  - May involve simple logic checks, confidence scoring, or LLM critique prompts
+
+### Customization and Training
+
+- Long-term plan includes:
+
+  - Collecting anonymized training data from user submissions (with consent)
+  - Fine-tuning lightweight models on writing types, error patterns, and exam formats
+  - Incorporating user-level tuning for adaptive learning paths
 
 ---
 
