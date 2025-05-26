@@ -1,0 +1,8 @@
+{
+  "name": "teach",
+  "private": true,
+  "packageManager": "yarn@4.9.1",
+  "workspaces": [
+    "apps/*"
+  ]
+}
